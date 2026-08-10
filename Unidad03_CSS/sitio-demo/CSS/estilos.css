@@ -1,19 +1,103 @@
 /*css/estilos.css*/
 /*Reset básico*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body    {
-    font-family: Arial, sans-serif;
-    color: rgb(193, 98, 8);
-    background-color:antiquewhite;
-}
-h1  {
-    color: rgb(173, 9, 31);
-    font-size:32px;
-    text-align: center;
+/*100% del tamaño que el usuario configuró por omisión son 16px*/
+html {
+  font-size: 100%;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1rem;
+  line-height: 1.6;
+  font-family: Arial, sans-serif;
+  color: rgb(193, 98, 8);
+  background-color: antiquewhite;
+}
+h1 {
+  color: rgb(173, 9, 31);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main p {
+  max-width: 78ch;
+  /*CH es es el ancho del caracter cero de la fuente en uso, el valor 70 marca el rango de lectura que resulta cómodo por línea o renglón. Mientras más larga la línea la vista tiende a perderse al cambiar de línea*/
+}
+
+main a {
+  text-decoration: none;
+  border-bottom: 1px solid #c52828;
+}
+
+blockquote p {
+  font-style: italic;
+  color: rgb(36, 108, 185);
+}
+
+header nav a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header {
+  background-color: #6e9e7e;
+  color: white;
+}
+
+header {
+  background-image: url(/Unidad03_CSS/recursos/fondo1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: round;
+  padding: 20px;
+}
+
+footer {
+  background-color: #28c57e;
+  padding: 20px;
+  margin-top: 32px;
+}
+
+h1,
+h2,
+h3 {
+  color: #f1f4;
+}
+
+.portada-texto {
+  background-color: rgba(203, 120, 120, 0.7);
+  padding: 24px;
+  border-radius: 20px;
+}
+
+header ul li  {
+
+  list-style-type: none;
+}
 /*Esta regla elimina los márgenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento*/

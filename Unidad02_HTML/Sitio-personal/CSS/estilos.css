@@ -1,19 +1,68 @@
 /*css/estilos.css*/
 /*Reset básico*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body    {
-    font-family: Arial, sans-serif;
-    color: rgb(193, 98, 8);
-    background-color:antiquewhite;
+
+header {
+  background-image: url(/Unidad02_HTML/Sitio-personal/Recursos/header-fondo.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: space;
+  padding: 25px;
 }
-h1  {
-    color: rgb(173, 9, 31);
-    font-size:32px;
-    text-align: center;
+
+header nav a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  font-weight: 550;
+}
+
+header ul li {
+  list-style-type: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: rgb(15, 15, 15);
+  background-color: rgb(254, 200, 216, 0.6);
+}
+
+h1 {
+  color: rgb(173, 9, 31);
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  color: rgb(5, 5, 5);
+}
+
+.slogan {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.nosotros {
+  border: 2px;
+  border-style: dashed;
+}
+
+.arreglos {
+}
+
+.mision {
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 /*Esta regla elimina los márgenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento*/
