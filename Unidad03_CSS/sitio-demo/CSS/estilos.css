@@ -20,8 +20,32 @@ body    {
 }
 h1  {
     color: rgb(173, 9, 31);
-    font-size:32px;
     text-align: center;
+}
+
+h1  {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2  {
+    font-size: 2rem;
+    font-weight: 700; 
+}
+
+h3  {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p   {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+main p  {
+max-width: 78ch;
+/*CH es es el ancho del caracter cero de la fuente en uso, el valor 70 marca el rango de lectura que resulta cómodo por línea o renglón. Mientras más larga la línea la vista tiende a perderse al cambiar de línea*/
 }
 
 /*Esta regla elimina los márgenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento*/
