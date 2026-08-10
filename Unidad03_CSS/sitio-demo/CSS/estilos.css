@@ -1,11 +1,19 @@
 /*css/estilos.css*/
 /*Reset básico*/
+/*100% del tamaño que el usuario configuró por omisión son 16px*/
+html{
+    font-size: 100%;
+
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body    {
+    font-size: 1rem;
+    line-height: 1.6;
     font-family: Arial, sans-serif;
     color: rgb(193, 98, 8);
     background-color:antiquewhite;
