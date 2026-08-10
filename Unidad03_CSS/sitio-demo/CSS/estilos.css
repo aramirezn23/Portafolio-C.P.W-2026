@@ -95,4 +95,9 @@ h3 {
   padding: 24px;
   border-radius: 20px;
 }
+
+header ul li  {
+
+  list-style-type: none;
+}
 /*Esta regla elimina los márgenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento*/
