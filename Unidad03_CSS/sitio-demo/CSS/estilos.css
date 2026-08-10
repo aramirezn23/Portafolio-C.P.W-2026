@@ -75,6 +75,16 @@ header  {
 
 }
 
+header  {
+    background-image:url(/Unidad03_CSS/recursos/fondo1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: round;
+    padding: 20;
+
+
+}
+
 footer  {
     background-color: #28c57e;
     padding: 20px;
