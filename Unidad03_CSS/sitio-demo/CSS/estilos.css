@@ -44,8 +44,29 @@ p   {
 }
 
 main p  {
-max-width: 78ch;
+    max-width: 78ch;
 /*CH es es el ancho del caracter cero de la fuente en uso, el valor 70 marca el rango de lectura que resulta cómodo por línea o renglón. Mientras más larga la línea la vista tiende a perderse al cambiar de línea*/
+}
+
+main a  {
+    text-decoration: none;
+    border-bottom: 1px solid #c52828;
+
+}
+
+blockquote p    {
+    font-style: italic;
+    color: rgb(36, 108, 185);
+
+}
+
+header nav a    {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    list-style-type: none;
+
 }
 
 /*Esta regla elimina los márgenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento*/
