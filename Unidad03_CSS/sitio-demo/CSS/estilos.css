@@ -63,7 +63,11 @@ header nav a {
   font-size: 0.9rem;
   text-decoration: none;
   list-style-type: none;
-  padding: ;
+  padding: 10px 15px;
+}
+
+nav li {
+  margin-right: 15px;
 }
 
 header {
@@ -97,30 +101,41 @@ h3 {
   border-radius: 20px;
 }
 
-header ul li  {
-
+header ul li {
   list-style-type: none;
 }
 
-thead th  {
+thead th {
   background-color: #1f4e79;
   color: white;
 }
 
-tfoot td  {
+tfoot td {
   padding: 12px;
   font-style: italic;
   background-color: #f5f7fa;
 }
 
-fieldset  {
+fieldset {
   padding: 10px;
 }
 
 header nav li {
   display: inline-block;
-  display: none;
-
-/*Esta linea (120) coloca la barra de navegación en linea, uno al lado de otro*/
+  /*visibility: hidden;*/
+  /*display: none;*/
+  /*Esta linea (125) coloca la barra de navegación en linea, uno al lado de otro*/
 }
+
+/*Los 5 valores de position:  
+static: valor por omision
+relative:se desplaza desde su propia posicion, conserva su propia posicion y los elementos vecinos no se mueven
+absolute:Se ubica respecto al ancestro más cercano
+fixed:se ubica respecto a la ventana, no se mueve al desplazarse
+sticky:fluye normal hasta llegar al umbral y se pega*/
+
+/*Patrón para este caso*/
+.figura-destacada {
+}
+
 /*Esta regla elimina los márgenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento*/
