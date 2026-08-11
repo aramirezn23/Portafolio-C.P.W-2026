@@ -100,4 +100,19 @@ header ul li  {
 
   list-style-type: none;
 }
+
+thead th  {
+  background-color: #1f4e79;
+  color: white;
+}
+
+tfoot td  {
+  padding: 12px;
+  font-style: italic;
+  background-color: #f5f7fa;
+}
+
+fieldset  {
+  padding: 10px;
+}
 /*Esta regla elimina los márgenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento*/
