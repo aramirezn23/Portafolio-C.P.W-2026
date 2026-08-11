@@ -63,6 +63,7 @@ header nav a {
   font-size: 0.9rem;
   text-decoration: none;
   list-style-type: none;
+  padding: ;
 }
 
 header {
@@ -114,5 +115,12 @@ tfoot td  {
 
 fieldset  {
   padding: 10px;
+}
+
+header nav li {
+  display: inline-block;
+  display: none;
+
+/*Esta linea (120) coloca la barra de navegación en linea, uno al lado de otro*/
 }
 /*Esta regla elimina los márgenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento*/
