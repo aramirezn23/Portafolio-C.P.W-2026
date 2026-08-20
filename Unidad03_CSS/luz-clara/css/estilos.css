@@ -1,0 +1,37 @@
+/*ESTUDIO LUZ CLARA*/
+
+/*VARIABLES Y CONFIGURACIÓN*/
+/*UNA VARIABLE GUARDA UN VALOR CON UN NOMBRE PARA PODER REUTILIZARLO*/
+/*SE DECLARA DENTRO DE :ROOT, QUE REPRESENTA EL ELEMENTO HTMLY ES EL ANCESTRO DE TODOS. TODOS LOS ELEMENTOS DEL DOCUMENTO LO ´PUEDEN UTILIZAR*/
+
+:root   {
+    /*PALETA DE COLORES*/
+    --color-tinta: #1a1a1a; /*Texto principal. Casi negro*/
+    --color-suave: #6b6b6b; /*Texto secundario. Pie de fotos*/
+    --color-marca: #2c3e50; /*Azul del estudio*/
+    --color-acento: #c87941; /*Terracota para botones*/
+    --color-acento-osc: #a45f2e; /*Terracota oscuro*/
+    --color-fondo: #fafaf8; /*Blanco roto, no blanco puro*/
+    --color-fondo-alt:#f0eee9; /*Para alternar fondos en secciones*/
+    --color-linea: #dddad3; /*Bordes y separadores*/ 
+    --color-blanco: #ffffff; /*Blanco puro*/
+
+    /*TIPOGRAFÍA*/
+    --fuente-titulo: Georgia, serif;
+    --fuente-texto: Arial, sans-serif;
+
+    /*ESPACIADO. Conversión 1rem = 10px*/
+    --esp-xs: 0.8rem; /*8px*/
+    --esp-sm: 1.6rem; /*16px*/
+    --esp-md: 2.4rem; /*24*/
+    --esp-lg: 4.0rem; /*40px*/
+    --esp-xl: 8rem; /*80px*/
+
+    /*OTROS ELEMENTOS*/
+    --radio: 0.6rem; /*6px*/
+    --sombra-1: 0 0.2rem 0.6rem rgb(0,0,0,0.6); /*Apenas separado*/
+    --sombra-2: 0 0.4rem 1.2rem rgb(0,0,0,0.10); /*Tarjetas*/
+    --sombra-3: 0 0.8rem 2.0rem rgb(0,0,0,0.16); /*Elementos elevados*/
+    --transicion: 0.25s ease;
+    --ancho-max: 120rem; /*1200px*/
+}
