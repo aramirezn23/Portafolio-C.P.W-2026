@@ -35,3 +35,18 @@
     --transicion: 0.25s ease;
     --ancho-max: 120rem; /*1200px*/
 }
+
+/*RESET Y BASE TIPOGRÁFICA*/
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Es la línea más importante del reset porque sin ella, si a una caja le damos width:300px y además un padding:20px y border de 2px, la caja en realidad mide 300+20+20+2+2 = 344px. Con esta línea, el relleno y el borde se descuentan hacia adentro*/
+}
+
+/*LA BASE DEL TAMAÑO. La técnica del 62.5%*/
+html    {
+    font-size: 62.5%; /*Por omisión el navegador usa 16px para el tamaño base. El 62.5% de 16px es 10px. Tiene que ver con accesibilidad y la parte responsive*/
+
+    scroll-behavior: smooth; /*Saltos suaves al usar navegación con anclas*/
+}
+
