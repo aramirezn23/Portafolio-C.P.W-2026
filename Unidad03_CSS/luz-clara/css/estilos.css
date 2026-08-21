@@ -98,3 +98,42 @@ img { /*Estas líneas mantienen las proporciones de las imágenes de una manera 
     max-width: none; /*Se anula el ancho máximo para que el fondo ocupe todo el ancho de pantalla*/
 }
 
+.seccion-titulo     {
+    margin-bottom: var(--esp-sm);
+    text-align: center;
+}
+
+.seccion-entrada    {
+    max-width: 65ch;    /*La unidad ch equivale al ancho del caracter ¨0¨ de la fuente en uso, son 65 caracteres por líne para una lectura más cómoda*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--esp-lg);
+    text-align: center;
+    color: var(--color-suave);
+}
+
+.pagina-encabezado  {
+    max-width: var(--ancho-max);
+    margin: 0 auto;
+    padding: var(--esp-xl) var(--esp-md) var(--esp-lg); /*Tres valore: arriba, los lados y abajo*/
+    text-align: center; 
+}
+
+.pagina-titulo      {
+    margin-bottom: var(--esp-xs);
+}
+
+.pagina-bajada      {
+    color:  var(--color-suave);
+    font-size: 1.8rem;
+}
+
+.subtitulo      {
+    margin-top: var(--esp-md);
+    margin-bottom: var(--esp-xs);
+}
+
+
+
+
+
