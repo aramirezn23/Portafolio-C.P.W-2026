@@ -1,0 +1,100 @@
+/*ESTUDIO LUZ CLARA*/
+
+/*VARIABLES Y CONFIGURACIÓN*/
+/*UNA VARIABLE GUARDA UN VALOR CON UN NOMBRE PARA PODER REUTILIZARLO*/
+/*SE DECLARA DENTRO DE :ROOT, QUE REPRESENTA EL ELEMENTO HTMLY ES EL ANCESTRO DE TODOS. TODOS LOS ELEMENTOS DEL DOCUMENTO LO ´PUEDEN UTILIZAR*/
+
+:root   {
+    /*PALETA DE COLORES*/
+    --color-tinta: #1a1a1a; /*Texto principal. Casi negro*/
+    --color-suave: #6b6b6b; /*Texto secundario. Pie de fotos*/
+    --color-marca: #2c3e50; /*Azul del estudio*/
+    --color-acento: #c87941; /*Terracota para botones*/
+    --color-acento-osc: #a45f2e; /*Terracota oscuro*/
+    --color-fondo: #fafaf8; /*Blanco roto, no blanco puro*/
+    --color-fondo-alt:#f0eee9; /*Para alternar fondos en secciones*/
+    --color-linea: #dddad3; /*Bordes y separadores*/ 
+    --color-blanco: #ffffff; /*Blanco puro*/
+
+    /*TIPOGRAFÍA*/
+    --fuente-titulo: Georgia, serif;
+    --fuente-texto: Arial, sans-serif;
+
+    /*ESPACIADO. Conversión 1rem = 10px*/
+    --esp-xs: 0.8rem; /*8px*/
+    --esp-sm: 1.6rem; /*16px*/
+    --esp-md: 2.4rem; /*24*/
+    --esp-lg: 4.0rem; /*40px*/
+    --esp-xl: 8rem; /*80px*/
+
+    /*OTROS ELEMENTOS*/
+    --radio: 0.6rem; /*6px*/
+    --sombra-1: 0 0.2rem 0.6rem rgb(0,0,0,0.6); /*Apenas separado*/
+    --sombra-2: 0 0.4rem 1.2rem rgb(0,0,0,0.10); /*Tarjetas*/
+    --sombra-3: 0 0.8rem 2.0rem rgb(0,0,0,0.16); /*Elementos elevados*/
+    --transicion: 0.25s ease;
+    --ancho-max: 120rem; /*1200px*/
+}
+
+/*RESET Y BASE TIPOGRÁFICA*/
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Es la línea más importante del reset porque sin ella, si a una caja le damos width:300px y además un padding:20px y border de 2px, la caja en realidad mide 300+20+20+2+2 = 344px. Con esta línea, el relleno y el borde se descuentan hacia adentro*/
+}
+
+/*LA BASE DEL TAMAÑO. La técnica del 62.5%*/
+html    {
+    font-size: 62.5%; /*Por omisión el navegador usa 16px para el tamaño base. El 62.5% de 16px es 10px. Tiene que ver con accesibilidad y la parte responsive*/
+
+    scroll-behavior: smooth; /*Saltos suaves al usar navegación con anclas*/
+}
+
+body    {
+    font-size: 1.6rem; /*Si no se agrega esta línea el texto no toma el valor de los 16px base y quedaría un texto casi ilegible*/
+    font-family: var(--fuente-texto);
+    line-height: 1.6;
+    color: var(--color-tinta);
+    background-color: var(--color-fondo);
+}
+
+/*JERARQUIA DE TÍTULOS*/
+h1, h2, h3  {
+    font-family: var(--fuente-titulo);
+    line-height: 1.2;
+    color: var(--color-marca);
+}
+
+h1  {font-size: 4.8rem;}
+h2  {font-size: 3.2rem;}
+h3  {font-size: 2.0rem;}
+
+p   {
+    margin-bottom:var(--esp-sm);
+}
+
+a   {
+    color:var(--color-acento);
+    text-decoration: none;
+}
+
+img { /*Estas líneas mantienen las proporciones de las imágenes de una manera más estructurada*/
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*CONTENEDORES Y SECCIONES*/
+
+.seccion    {
+    max-width: var(--ancho-max); /*Toma todo el ancho disponible*/
+    margin-left: auto;
+    margin-right: auto;  /*Estas líneas centran el bloque, repartiendo el espacio sobrante por igual*/
+    padding: var(--esp-xl) var(--esp-md); /*Dos valores: el primero afecta arriba y abajo, y luego izquierda-derecha*/
+}
+
+.seccion-alterna    {
+    background-color: var(--color-fondo-alt);
+    max-width: none; /*Se anula el ancho máximo para que el fondo ocupe todo el ancho de pantalla*/
+}
+
