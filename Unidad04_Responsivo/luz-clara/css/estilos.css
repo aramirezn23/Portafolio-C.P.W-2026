@@ -144,6 +144,7 @@ img { /*Estas líneas mantienen las proporciones de las imágenes de una manera 
     position: sticky;
     top: 0;
     z-index: 100;
+    background-color: var(--color-fondo-alt);
 }
 
 .logo      {
