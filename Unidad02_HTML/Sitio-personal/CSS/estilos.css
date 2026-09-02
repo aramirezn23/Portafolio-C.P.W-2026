@@ -1,13 +1,61 @@
 /*css/estilos.css*/
-/*Reset básico*/
+
+
+/*Reset básico y gestión de variables*/
+
+:root {
+
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-header {
-  background-image: url(/Unidad02_HTML/Sitio-personal/Recursos/header-fondo.png);
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var();
+  line-height: 1.6;                                           
+  color: var();
+  background-color: var();            
+}
+
+h1, h2, h3 {
+  font-family: var();
+  line-height: 1.2;
+  color: var();
+}
+
+h1 { font-size: 4.8rem; }
+h2 { font-size: 3.2rem; } 
+h3 { font-size: 2.0rem; }
+
+p {
+  margin-bottom: var(--esp-sm);
+}
+
+a {
+  color: var(--color-acento);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+}
+
+
+______________________________________________________________________________________________________________________________
+
+#Inicio {
+  background-image:url('../Recursos/rosa-icono.png');
   background-size: cover;
   background-position: center;
   background-repeat: space;
@@ -64,5 +112,3 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
-
-/*Esta regla elimina los márgenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde en el ancho y alto del elemento*/
