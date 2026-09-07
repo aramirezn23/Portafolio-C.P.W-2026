@@ -34,6 +34,15 @@
     </a>
 
     <nav class="navegacion" aria-label="Navegación principal">
+      <!--MENU HAMBURGUEZA-->
+      <input type="checkbox" id="abrir-menu" class="menu-control">
+      <label for="abrir-menu" class="menu-boton">
+        <span class="menu-barra"></span>
+        <span class="menu-barra"></span>
+        <span class="menu-barra"></span>
+        <span class="menu-texto">Menú</span>
+      </label>
+      <!--CIERRE MENU HAMBURGUEZA-->
       <ul class="menu">
         <li><a href="index.html" class="menu-enlace activo">Inicio</a></li>
         <li><a href="galeria.html" class="menu-enlace">Galería</a></li>
@@ -132,48 +141,78 @@
 
         <!--  MARCADOR DE IMAGEN   recursos/foto-1.jpg  ·  800 × 600 px -->
         <figure class="galeria-pieza pieza-destacada">
-          <img src="recursos/foto1.jpg" alt="Retrato en blanco y negro junto a una ventana"
+          <img src="recursos/foto-1.jpg" alt="Retrato en blanco y negro junto a una ventana"
                width="800" height="600">
           <figcaption class="galeria-pie">Retrato de estudio · 2026</figcaption>
         </figure>
 
         <!--  MARCADOR   recursos/foto-2.jpg  ·  600 × 600 px -->
         <figure class="galeria-pieza">
-          <img src="recursos/foto2.jpg" alt="Botella de vidrio sobre fondo neutro"
+          <img src="recursos/foto-2.jpg" alt="Botella de vidrio sobre fondo neutro"
                width="600" height="600">
           <figcaption class="galeria-pie">Producto · Cerámica local</figcaption>
         </figure>
 
         <!--  MARCADOR   recursos/foto-3.jpg  ·  600 × 600 px -->
         <figure class="galeria-pieza">
-          <img src="recursos/foto3.jpg" alt="Pareja de novios caminando entre árboles"
+          <img src="recursos/foto-3.jpg" alt="Pareja de novios caminando entre árboles"
                width="600" height="600">
           <figcaption class="galeria-pie">Boda · Escazú</figcaption>
         </figure>
 
         <!--  MARCADOR   recursos/foto-4.jpg  ·  600 × 600 px -->
         <figure class="galeria-pieza">
-          <img src="recursos/foto4.jpg" alt="Manos trabajando una pieza de barro"
+          <img src="recursos/foto-4.jpg" alt="Manos trabajando una pieza de barro"
                width="600" height="600">
           <figcaption class="galeria-pie">Documental · Taller</figcaption>
         </figure>
 
         <!--  MARCADOR   recursos/foto-5.jpg  ·  600 × 600 px -->
         <figure class="galeria-pieza">
-          <img src="recursos/foto5.jpg" alt="Retrato corporativo sobre fondo gris"
+          <img src="recursos/foto-5.jpg" alt="Retrato corporativo sobre fondo gris"
                width="600" height="600">
           <figcaption class="galeria-pie">Perfil profesional</figcaption>
         </figure>
 
         <!--  MARCADOR   recursos/foto-6.jpg  ·  600 × 600 px -->
         <figure class="galeria-pieza">
-          <img src="recursos/foto6.jpg" alt="Salón decorado durante una celebración"
+          <img src="recursos/foto-6.jpg" alt="Salón decorado durante una celebración"
                width="600" height="600">
           <figcaption class="galeria-pie">Evento corporativo</figcaption>
         </figure>
 
       </div>
     </section>
+<!--VIDEO LUZ CLARA-->
+
+    <section id="presentacion-video" class="seccion">
+  <h2 class="seccion-titulo">Conozca el estudio</h2>
+  <p class="seccion-entrada">
+    Un recorrido breve por el local y por cómo trabajamos.
+  </p>
+      <!--Preload=metadata: No descarga el video hasta que sea requerido-->
+  <div class="video-envoltorio">
+    <video controls
+           preload="metadata" 
+           poster="recursos/video-portada.webp"
+           width="1280" height="720">
+
+      <source src="recursos/estudio-fotografico.mp4" type="video/mp4">
+      <source src="recursos/estudio-fotografico.webm" type="video/webm">
+
+      <track src="recursos/subtitulos.vtt"
+             kind="subtitles"
+             srclang="es"
+             label="Español"
+             default>
+
+      Su navegador no admite la reproducción de video.
+      <a href="recursos/estudio-fotografico.webm">Descargue el archivo</a>
+      para verlo en su equipo.
+    </video>
+  </div>
+</section>
+<!--Fin de video-->
 
     <!-- TESTIMONIO · aquí se practica la cita y el pseudo-elemento -->
     <section id="testimonio" class="seccion">
