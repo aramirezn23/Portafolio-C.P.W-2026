@@ -867,7 +867,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 28rem;/*faltó*/
+  width: 28rem;
   height: 100vh;
   background-color: var(--color-blanco);
   box-shadow: var(--sombra-3);
@@ -908,7 +908,7 @@ img {
   visibility: visible;
   cursor: pointer;
 }
-
+/*
 .panel-control:checked ~ .panel-lateral::before {
   content: '';
   position: fixed;
@@ -917,7 +917,24 @@ img {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.45);
-  z-index: -1; /*oscurece el resto de la página mientras el panel esta abierto*/
+  z-index: -1; /*oscurece el resto de la página mientras el panel esta abierto
+}
+*/
+/*LA CAPA OSCURA*/
+.panel-fondo {
+  position: fixed;
+  inset: 0; /*indica que top, bottom, right y left en 0. cubre pantalla completa*/
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 150;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.panel-control:checked ~ .panel-fondo {
+  opacity: 1;
+  visibility: visible;
+  cursor: pointer;
 }
 
 /*El boton  yel cierre*/
@@ -2401,6 +2418,33 @@ Aplicar reglas según si el dispositivo esta en vertical u horizontal*/
     /*La imagen cambia de lado, sin encoger o bajar*/
   }
 }
+
+/*OFF Canvas solo para pantallas pequeñas*/
+@media (min-width: 1024px) {
+  .panel-boton,
+  .panel-cerrar {
+    display: none;
+  }
+  .panel-fondo {
+    display: none;
+  }
+  .panel-lateral {
+    position: static;
+    transform: none;
+    width: auto;
+    height: auto;
+    padding-left: 5rem;
+    z-index: auto;
+  }
+  #mosaico {
+    display: grid;
+    grid-template-columns: 24rem 1fr;
+    gap: var(--esp-lg);
+    align-items: center;
+  }
+}
+
+
 
 /*LAS CONSULTAS DISPONIBLES
 @media (min-width: 768px) ancho mínimo
