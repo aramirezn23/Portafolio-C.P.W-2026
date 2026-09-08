@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mi sitio personal">
+    <meta name="keywords" content="mi sitio, personal, HTML, GitHub, Web">
+    <meta name="author" content="wallace">
+    <title>Reservaciones | Café Guau</title>
+    <link rel="icon" href="Recursos/cafeteria.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+        <!-- Este es el encabezado -->
+    <header id="header">
+        <div class="logo">
+            <img src="Recursos/gt.svg" alt="Insignia del módulo con una estrella sobre un circulo" width="100" height="100">
+            <h1>Café Guau</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="Listas.html">Listas</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main id="Contenido">
+        <h2>Formulario de citas</h2>
+        <p></p>
+
+        <article class="formulario">
+            <h3>Reserva</h3>
+            <form action="#" method="post">
+                <fieldset class="datos-personales">
+                    <legend>Datos de personales</legend>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"  minlength="8" maxlength="30" placeholder="Ingrese su nombre" required>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico" required>
+                    <br><br>
+                    <label for="numero">Numero de teléfono:</label>
+                    <input type="tel" id="numero" name="numero" maxlength="8" placeholder="Ingrese su número de teléfono" required>
+                    <small>minimo de 8 numeros</small>
+                    <br><br>
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" placeholder="Ingrese su contraseña de confirmación" required>
+                    <small>te enviamos un número de confirmación a tu correo</small>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Detalles de la solicitud</legend>
+                    <label for="date">Fecha de la cita:</label>
+                    <input type="date" id="date" name="date">
+                    <br><br>
+                    <label for="numero">Cantidad de personas:</label>
+                    <input type="number" id="number" name="number" min="1" max="10" placeholder="Cantidad">
+                    <br><br>
+                    <label for="numero">Mesas:</label>
+                    <select name="number" id="Mesas">
+                     <option value="">Seleccione una mesa</option>
+                     <option value="1">Mesa 1</option>
+                     <option value="2">Mesa 2</option>
+                     <option value="3">Mesa 3</option>
+                     <option value="4">Mesa 4</option>
+                     <option value="5">Mesa 5</option>
+                     <option value="6">Mesa 6</option>
+                     <option value="7">Mesa 7</option>
+                    </select>
+
+                    <fieldset class="horario">
+                        <legend>Horario de la cita</legend>
+                        <input type="radio" id="mañana" name="horario" value="mañana">
+                        <label for="mañana">Mañana</label>
+                        <input type="radio" id="tarde" name="horario" value="tarde">
+                        <label for="tarde">Tarde</label>
+                        <input type="radio" id="noche" name="horario" value="noche">
+                        <label for="noche">Noche</label>
+                        
+                    </fieldset>
+
+                </fieldset>
+
+                <fieldset class="confirmacion">
+                    <legend>Confirmación</legend>
+                    <input type="checkbox" id="confirmacion" name="confirmacion" required>
+                    <label for="confirmacion">Confirmo mis datos</label>
+                    <br>
+                    <input type="checkbox" id="acepto" name="acepto" required>
+                    <label for="acepto">Acepto los términos y condiciones</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Comentarios</legend>
+                    <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Ingrese sus comentarios aquí..."></textarea>
+                </fieldset>
+                <p class="botones " class="boton">
+                    <button type="submit">Enviar</button>
+                    <button  class="boton-secundario" type="reset">Borrar</button>
+                </p>
+                
+            </form>
+
+        </article>
+    </main>
+    <hr> <!-- salto de página -->
+    <!-- Este es el pie de página -->
+    <footer id="footer">
+        <address>
+            Correo electrónico: <a href="cafeteriagua@bco.com">cafeteriagua@bco.com</a>
+        </address> 
+        
+        <p><small>&copy; 2026 Café Guau. Todos los derechos reservados.</small></p>
+    </footer>
+</body>
+</html>

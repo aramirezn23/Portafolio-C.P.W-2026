@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mi sitio personal">
+    <meta name="keywords" content="mi sitio, personal, HTML, GitHub, Web">
+    <meta name="author" content="wallace">
+    <title>Galería | Café Guau</title>
+    <link rel="icon" href="Recursos/cafeteria.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+        <!-- Este es el encabezado -->
+    <header id="header">
+        <div class="logo">
+            <img src="Recursos/gt.svg" alt="Insignia del módulo con una estrella sobre un circulo" width="100" height="100">
+            <h1>Café Guau</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="Listas.html">Listas</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <article>
+        <h2>Galeria de imagenes, audio y video</h2>
+        
+        <section>
+            <h3>Galería de Imágenes</h3>
+            <p>¡Bienvenido a nuestra galería! Aquí puedes ver algunos de nuestros servicios.</p>
+            <div class="imagenes">
+            <div class="imagene1">
+            <picture>
+                <img src="Recursos/foto cafe perros.jpg" alt="Imagen de una cafetería de perros" width="300px" height="400px">
+                <figcaption>Disfruta con nosotros de un momento ameno</figcaption>
+            </picture>
+            </div>
+
+            <div class="imagene2">
+            <figure>
+                <img src="Recursos/Postres.jpg" alt="Imagen de postres de la cafeteria" width="300" height="400px" >
+                <figcaption>En este espacio puedes ver nuestros deliciosos postres</figcaption>
+            </figure>
+            </div>
+
+            <div class="imagene3">
+            <picture>
+                <source srcset="Recursos/Tipos_de_cafes.jpg" type="image/jpg">
+                <source srcset="Recursos/Tipos_de_cafes.png" type="image/png">
+                <img src="Recursos/Tipos_de_cafes.jpg" alt="Imagen de diferentes tipos de café" width="300" height="400px" >
+                <figcaption>Aquí puedes ver varios de nuestros  tipos de cafes</figcaption>
+            </picture>
+            </div>
+            </div>
+            
+        </section>
+        <section>
+            <h3>Galería de audios</h3>
+            <audio controls>
+                <source src="Recursos/Relax.mp3" type="audio/mp3">
+                <source src="Recursos/Relax.ogg" type="audio/ogg">
+                <p> Tu navegador no soporta la reproducción de audio. <a href="Recursos/Relax.mp3" download>Descargar audio</a></p>
+            </audio>
+
+        </section>
+        <section>
+            <h3>Galería de Videos</h3>
+            <video controls width="400" poster="Recursos/poster perro.jpg" preload="metadata">
+                <source src="Recursos/Cafeteria.mp4" type="video/mp4">
+                <source src="Recursos/Cafeteria.ogg" type="video/ogg">
+                <track kind="subtitles" src="Recursos/Cafeteria.vtt" srclang="es" label="Español" default>
+                <p>Tu navegador no soporta la reproducción de video. <a href="Recursos/Cafeteria.mp4" download>Descargar video</a></p>
+            </video>
+        </section>
+    </article>
+    <hr> <!-- salto de página -->
+    <!-- Este es el pie de página -->
+    <footer id="footer">
+        <address>
+            Correo electrónico: <a href="cafeteriagua@bco.com">cafeteriagua@bco.com</a>
+        </address> 
+        
+        <p><small>&copy; 2026 Café Guau. Todos los derechos reservados.</small></p>
+    </footer>
+</body>
+
+</html>

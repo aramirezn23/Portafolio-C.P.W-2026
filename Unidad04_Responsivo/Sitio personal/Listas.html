@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mi sitio personal">
+    <meta name="keywords" content="mi sitio, personal, HTML, GitHub, Web">
+    <meta name="author" content="wallace">
+    <title>Menú y horario | Café Guau</title>
+    <link rel="icon" href="Recursos/cafeteria.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <!-- Este es el encabezado -->
+    <header id="header">
+        <div class="logo">
+            <img src="Recursos/gt.svg" alt="Insignia del módulo con una estrella sobre un circulo" width="100" height="100">
+            <h1>Café Guau</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Galeria.html">Galería</a></li>
+                <li><a href="Listas.html">Listas</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="listas">
+        <h2>Nuestros productos</h2>
+        <ul class="desordenada">
+            <li>Postres</li>
+            <li>Cafes</li>
+            <li>Emparedados</li>
+            <li>Bebidas</li>
+        </ul>
+    
+        <hr> <!-- salto de página -->
+    
+        <h2>Lista ordenada</h2>
+        <ol start="1">
+            <li>Gaseosas</li>
+            <li>Té</li>
+            <li>Chocolate caliente</li>
+        </ol>
+
+        <hr> <!-- salto de página -->
+
+        <h2>Lista de descripción</h2>
+        <dl>
+            <dt>Postres</dt>
+            <dd>Gran variedad de postres dulces y el <strong>especial de la casa el cheese cake</strong></dd>
+            <dt>Cafes</dt>
+            <dd>Una amplia selección de cafés <strong><abbr title="De primera calidad">premium</abbr></strong> como el espresso y el cappuccino</dd>
+            <dt>Emparedados</dt>
+            <dd>Variedad de emparedados <strong>saludables</strong> y deliciosos</dd>
+        </dl>
+
+        <hr> <!-- salto de página -->
+
+        <h2>Lista anidada</h2>
+        <Ul class="lista">
+            <li>Postres
+                <ul>
+                    <li>Cheese cake</li>
+                    <li>Tiramisu</li>
+                    <li>Tarta de manzana</li>
+                </ul>
+            </li>
+             <li>Cafes
+                <ul>
+                    <li>Cappuccino</li>
+                    <li>Espresso</li>
+                    <li>Latte</li>
+                </ul>
+            </li>
+             <li>Emparedados
+                <ul>
+                    <li>sandwich de jamón y queso</li>
+                    <li>sandwich de pollo</li>
+                    <li>sandwich de atún</li>
+                </ul>
+            </li>
+      </Ul>
+    </section>
+    
+    <section>
+        <h2>Tabla</h2>
+        <table border="1">
+        <caption>Horario de atención</caption>
+        <thead>
+            <tr>
+                <th scope="col">Día</th>
+                <th scope="col">Horario</th>
+                <th scope="col">Especial del día</th>
+                <th scope="col">Atención minina</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lunes</td>
+                <td>8:00am a 5:30pm</td>
+                <td>Cheese cake</td>
+                <td>10:00am a 4:00pm</td>
+            </tr>
+
+            <tr>
+                <td>Martes</td>
+                <td>8:00am a 5:30pm</td>
+                <td>Tiramisu</td>
+                <td>10:00am a 4:00pm</td>
+            </tr>
+            <tr>
+                <td>Miércoles</td>
+                <td>8:00am a 5:30pm</td>
+                <td>Tarta de manzana</td>
+                <td>10:00am a 4:00pm</td>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td>8:00am a 5:30pm</td>
+                <td>sandwich de jamón y queso</td>
+                <td>10:00am a 4:00pm</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>8:00am a 5:30pm</td>
+                <td>sandwich de pollo</td>
+                <td>10:00am a 4:00pm</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Sábado y <br>Domingo</td>
+                <td>8:00am a 5:30pm</td>
+                <td>sandwich de atún</td>
+                <td>10:00am a 4:00pm</td>
+            </tr>
+            <tr>
+                <td>Cerrado</td>
+                <td></td>
+                <td></td>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Horario de atención sujeto a cambios</td>
+            </tr>
+        </table>
+    </section>
+
+        <footer id="footer">
+        <address>
+            Correo electrónico: <a href="cafeteriagua@bco.com">cafeteriagua@bco.com</a>
+        </address> 
+        
+        <p><small>&copy; 2026 Café Guau. Todos los derechos reservados.</small></p>
+    </footer>
+</body>
+</html>  
